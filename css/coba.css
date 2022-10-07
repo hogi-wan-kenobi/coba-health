@@ -6,18 +6,39 @@ body {
   h2 {
       font-size: 24px;
       text-transform: uppercase;
-      color: #303030;
-      font-weight: 600;
-      margin-bottom: 30px;
+      font-weight: 300;
+      margin-bottom: 0px;
+      margin-top: 0px;
+      padding-bottom: 20px;
+      padding-top: 20px;
   }
-#savingsPage{}
-      #h2-top{
-          text-transform: uppercase;
-          line-height: 175%;
-          color: darkslategray;
-          margin-top: 30px;
-          font-weight: 200;
-      }
+/*
+iframe {
+    width: auto;
+    height: 300;
+}
+*/
+.slate {
+    color: darkslategray;
+}
+.white-text {
+    color: whitesmoke;
+}
+#h2-top{
+    text-transform: uppercase;
+    line-height: 175%;
+    color: darkslategray;
+    font-weight: 300;
+}
+@media screen and (max-width: 1000px) {
+    #h2-top { 
+        font-size: 20px;
+        line-height: 115%;
+        color: whitesmoke;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }   /* hide it elsewhere */
+}
       #h2-bottom{
           font-size: 22px;
           text-transform: uppercase;
@@ -37,7 +58,7 @@ body {
           color: darkslategray;
           font-size: 52px;
           font-weight: 200;
-          padding-bottom: 10px;
+          padding-bottom: 25px;
       }
 @media screen and (max-width: 1000px) {
   #h-top { 
@@ -126,15 +147,6 @@ body {
           padding-left: 50px;
           padding-right: 40px;
       }
-      #case{
-          font-size: 48px;
-          font-family: Montserrat, sans-serif; 
-          text-align: center;
-          font-weight: 200;
-          line-height: 175%;
-          color: #646369;
-          padding-top: 30px;
-      }
       #chase{
           font-size: 26px;
           font-family: Montserrat, sans-serif; 
@@ -200,17 +212,17 @@ body {
           margin:0;
       }
     #casepopl{
-          font-size: 20px;
-          font-family: Montserrat, sans-serif; 
-          text-align: left;
-          font-weight: 200;
-          line-height: 175%;
-          color: #646369;
-          padding-top: 20px;
-          padding-bottom:25px;
-          padding-left: 15px;
-          padding-right: 15px;
-          margin:0;
+        font-size: 18px;
+        font-family: Montserrat, sans-serif; 
+        text-align: left;
+        font-weight: 300;
+        line-height: 175%;
+        color: #646369;
+        padding-top: 20px;
+        padding-bottom:25px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin:0;
       }
     #surgeonpopl{
           font-size: 20px;
@@ -238,15 +250,40 @@ body {
           padding-right: 15px;
           margin:0;
       }
-      #case1{
-          font-size: 48px;
-          font-family: Montserrat, sans-serif; 
-          text-align: center;
-          font-weight: 200;
-          line-height: 175%;
-          color: whitesmoke;
-          padding-top: 30px;
-      }
+#case{
+    font-size: 40px;
+    font-family: Montserrat, sans-serif; 
+    text-align: center;
+    font-weight: 200;
+    line-height: 115%;
+    color: #646369;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+@media screen and (max-width: 750px) {
+  #case { 
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 115%;
+    }
+}
+  #case1{
+      font-size: 40px;
+      font-family: Montserrat, sans-serif; 
+      text-align: center;
+      font-weight: 200;
+      line-height: 115%;
+      color: whitesmoke;
+      padding-top: 30px;
+      padding-bottom: 40px;
+  }
+@media screen and (max-width: 750px) {
+  #case1 { 
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 115%;
+    }
+}
       #casestudy{
           font-size: 48px;
           font-family: Montserrat, sans-serif; 
@@ -256,6 +293,14 @@ body {
           color: whitesmoke;
           padding-top: 7%;
       }
+@media screen and (max-width: 750px) {
+  #casestudy { 
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 115%;
+      padding-top: 110px;
+    }
+}
     #three2{
           font-size: 26px;
           font-weight: 300;
@@ -283,6 +328,11 @@ body {
       padding-left: 20px;
       font-weight: 200;
   }
+.case-desc{
+    padding-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
       #wht{
           color:white;
       }
@@ -297,12 +347,15 @@ body {
       color: white;
       font-family: Montserrat, sans-serif; text-align: center; line-height: 175%; font-weight: 200;
       height: 100vh;
+      z-index: 1;
+      margin-bottom: 0;
   }
 @media only screen and (max-width : 740px) {
 	.jumbotron {
         background-attachment: scroll;
 }
       }
+
   .study {
       margin-top: -20px;
       background-color: #0270B8;
@@ -354,7 +407,7 @@ body {
   }
 
   .container-fluid {
-      padding: 60px 50px;
+      padding-bottom: 30px;
   }
   .bg-grey {
       background-color: #f6f6f6;
@@ -440,15 +493,26 @@ body {
     max-width: 15%;
     height: auto;
       }
-      #resp{
-    margin-top: 5%;
+#nav-logo{
+    height: 30px;
+    width: auto;
+    margin-top: 0px;
+}
+.navbar-logo {
+  float: left;
+  height: 50px;
+  padding: 8px;
+}
+#resp{
+    padding-top: 5%;
     width: 35%;
+    max-width: 400px;
     height: auto;
       }
-@media only screen and (max-width : 700px) {
+@media only screen and (max-width : 750px) {
 	#resp {
-        width:85%;
-        margin-top: 15%;
+        width:250px;
+        padding-top: 75px;
     }
 }
     .altern{
@@ -458,23 +522,23 @@ body {
       }
 @media only screen and (max-width : 700px) {
 	.altern {
-        width:85%;
+        width: 85%;
         margin-top: 10%;
     }
 }
-  .navbar {
-      margin-bottom: 0;
-        background:transparent;
-        background-color:transparent;
-        border-color:transparent;
-      z-index: 9999;
-      border: 0;
-      font-size: 12px !important;
-      line-height: 1.42857143 !important;
-      letter-spacing: 4px;
-      border-radius: 0;
-      font-family: Montserrat, sans-serif;
-  }
+.navbar {
+    margin-bottom: 0;
+    background:transparent;
+    background-color:transparent;
+    border-color:transparent;
+    z-index: 2;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+}
 .navbar-fixed-top.scrolled {
   background-color: #0270B8 !important;
   transition: background-color 300ms linear;
@@ -508,6 +572,8 @@ body {
     height:100%;
     table-layout:fixed;
     color:#646369;
+    margin-top:0;
+    padding-top:0;
 }
 .table2 {
     display:table;
@@ -518,6 +584,7 @@ body {
 }
 .row1 {
     display:table-row;
+    margin-top:0px;
 }
 * {
   box-sizing: border-box;
@@ -526,6 +593,49 @@ body {
 .row {
   display: -webkit-flex;
   display: flex;
+}
+.full-height{
+    height: 100%;
+}
+.column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.employer-landing{
+    background-color: #0270B8;
+    color: whitesmoke;
+    height: 80vh;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.small-landing {
+    background-color: #0270B8;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 75px;
+}
+.cover-image {
+    position:absolute;
+    background-image: url("images/Intro-Video-Thumb.jpg");
+    background-size: cover;
+}
+.pop-video {
+    width: 560px; 
+    height: 315px;
+}
+.pop-video-half {
+    width: 400px; 
+    height: 225px;
+}
+@media only screen and (max-width : 500px) {
+	.pop-video-half {
+        width: 350px;
+        height: 197px;
+    }
 }
 
 /* Create three equal columns that sits next to each other */
@@ -550,7 +660,7 @@ body {
   padding-right: 30px;
 }
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   .row {
     -webkit-flex-direction: column;
     flex-direction: column;
@@ -590,18 +700,18 @@ img {
     color: whitesmoke;
 }
 .cell1 {
-    display:table-cell;
+    display: table-cell;
     border:0px solid;
     text-align: center;
-    height:70vh;
+    height:450px;
     width:100%;
-    vertical-align: middle;
+    vertical-align: m;
 }
 .cell2 {
     display:table-cell;
     border:0px solid;
     text-align: center;
-    height:70vh;
+    height:400px;
     width:50%;
     vertical-align: middle;
 }
@@ -674,10 +784,22 @@ img {
 @media screen and (max-width: 750px) {
   .noseeme { display: none; }   /* hide it elsewhere */
 } 
-.showsmall{}
-
+.noseeme-med{}
+@media screen and (max-width: 1200px) {
+  .noseeme-med { display: none; }   /* hide it elsewhere */
+} 
+.show-small{
+    display:none;
+}
 @media screen and (max-width: 750px) {
-  .showsmall { display: block; }   /* hide it elsewhere */
+  .show-small { display: block; }   /* hide it elsewhere */
+} 
+.show-med{
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .show-med { display: block; }   /* hide it elsewhere */
 } 
       .lrg{
           height: 90vh;
@@ -716,6 +838,8 @@ img {
         .button-guy{
             background-color: none;
             font-size: 16px;
+            margin-bottom: 40px;
+            margin-top: 20px;
             padding: 12px 24px;
             border-radius: 4px;
             border: 2px solid #646369;
@@ -730,6 +854,8 @@ img {
         .button-grey{
             background-color: none;
             font-size: 16px;
+            margin-bottom: 40px;
+            margin-top: 20px;
             padding: 12px 24px;
             border-radius: 4px;
             border: 2px solid whitesmoke;
@@ -741,11 +867,27 @@ img {
             color: black;
             border: 2px solid black;
         }
+        .button-white{
+            font-family: Montserrat;
+            font-weight: 400;
+            font-size: 16px;
+            background-color: none;
+            padding: 12px 24px;
+            border-radius: 4px;
+            border: 2px solid whitesmoke;
+            color: whitesmoke;
+            -webkit-transition-duration: 0.2s; /* Safari */
+            transition-duration: 0.2s;
+        }
+        .button-white:hover{
+            color: black;
+            border: 2px solid black;
+        }
       #top{
           margin-bottom: 50%;
       }
       .booty{
-          padding-bottom: 30px;
+          padding-bottom: 20px;
           border-top: 2px solid #8c8b8b;
           width: 200px;
           float: center;
@@ -774,17 +916,7 @@ img {
           background-color:#fdc741;
       }
       .fit{
-            background-image: url(images/Iceland%20Seljalandsfoss%20at%20sunset%20by%20Michael%20Matti-XL.jpg);
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            background-position: center;
-            max-height: 60vh;
-            width: 100%; 
-      }
-      .fitsurgeon{
-            background-image: url(images/golf.jpg);
+            background-image: url(images/snowmobile-min.jpg);
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -794,7 +926,7 @@ img {
             width: 100%; 
       }
       .fit1{
-            background-image: url(images/hals.JPG);
+            background-image: url(images/flyfish-min.jpg);
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -834,7 +966,7 @@ img {
             width: 100%;  
       }
       .fit5{
-            background-image: url(images/fish.JPG);
+            background-image: url(images/tennis-min.jpg);
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -909,32 +1041,38 @@ img {
             width: auto;
         }
             #popupBoxOnePosition{
-				top: 0; left: 0; position: fixed; width: 100%; height: 120%;
-				background-color: rgba(0,0,0,0.7); display: none;
+				top: 0; 
+                left: 0; 
+                position: fixed; 
+                width: 100%; 
+                height: 120%;
+				background-color: rgba(0,0,0,0.7); 
+                display: none;
                 overflow:auto;
+                z-index: 3;
 			}
 			#popupBoxTwoPosition{
 				top: 0; left: 0; position: fixed; width: 100%; height: 120%;
 				background-color: rgba(0,0,0,0.7); display: none;
-                overflow:auto;
+                overflow:auto; z-index: 3;
                 
 			}#popupBoxThreePosition{
 				top: 0; left: 0; position: fixed; width: 100%; height: 120%;
 				background-color: rgba(0,0,0,0.7); display: none;
-                overflow:auto;
+                overflow:auto; z-index: 3;
 			}
             #popupBoxFourPosition{
 				top: 0; left: 0; position: fixed; width: 100%; height: 120%;
 				background-color: rgba(0,0,0,0.7); display: none;
-                overflow:auto;
+                overflow:auto; z-index: 3;
             }
             #popupBoxFivePosition{
-				top: 0; left: 0; position: fixed; width: 100%; height: 120%;
+				top: 0; left: 0; position: fixed; width: 100%; height: 100%;
 				background-color: rgba(0,0,0,0.7); display: none;
-                overflow:auto;
+                overflow:auto; z-index: 3;
             }
 			.popupBoxWrapper{
-				max-width: 75%; margin-top:75px; margin-bottom: 175px; margin-left: auto; margin-right: auto; text-align: left;
+				max-width: 75%; margin-top:50px; margin-bottom: 175px; margin-left: auto; margin-right: auto; text-align: left;
 			}
 			.popupBoxContent{
 				background-color: #FFF; padding: 15px;
@@ -955,11 +1093,11 @@ img {
             margin-right: 10px;
         }
         .respond{
-            max-width:90%;
+            width: 95%;
             text-align: center;
             margin: auto;
             padding-left: auto;
-            padding-right:auto;
+            padding-right: auto;
             padding-top: 20px;
             height:auto;
         }
@@ -972,15 +1110,15 @@ img {
             padding-top: 20px;
             height:auto;
         }
-        .respond-plan{
-            max-width:70%;
+        .respond-plan {
+            width: 100%;
             text-align: center;
             margin: auto;
             padding-left: auto;
-            padding-right:auto;
-            padding-top: 20px;
-            height:auto;
-            vertical-align: middle;
+            padding-right: auto;
+            padding-top: 0px;
+            padding-bottom: 20px;
+            height: auto;
         }
         .center{
             text-align: center;
